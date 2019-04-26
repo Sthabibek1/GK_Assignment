@@ -1,0 +1,17 @@
+
+.signupsquare{
+	width:500%;
+	height:800% 
+   color:black;
+   background:  white;
+   position: absolute;
+   box-sizing: border-box;
+}
+.signupphoto{
+	width:500%; 
+	height:200%;
+	border-radius:500%;
+	position: absolute;
+	margin-top:400%; 
+	margin-left:500%;
+}
