@@ -1,0 +1,51 @@
+.logo {
+	width:70%; 
+	height:20%;
+}
+
+
+.heading1 {
+overflow: hidden;
+ box-shadow:inset 0 -10px 20px 0 rgba(0,0,1,1) ;
+ font-size: 20px;
+opacity: 0.7;
+}
+
+.heading1 li{
+  padding: 10px;
+}
+
+.heading1 a{
+	text-decoration: none;
+	color: white;
+	padding:20px;
+  text-align: center;
+}
+.active{
+  background-color: #005b88;
+ }
+
+ul{
+  list-style: none;
+}
+
+.heading1 ul{
+  display: flex;
+}
+
+.heading1 ul li a:hover{
+  color: black;
+  opacity: 1px;
+}
+
+.active{
+	background-color: #005b88;
+ }
+
+ul{
+	list-style: none;
+}
+
+.heading1 ul{
+  display: flex;
+}
