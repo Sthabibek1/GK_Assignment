@@ -4,13 +4,7 @@ function dateFunction(){
 	var div= document.getElementById('date');
 	div.innerHTML=date;
 }
-
 function myFunction(x) {
-  // x.classList.toggle('change');
-
-  dateFunction();
-  photoShows();
+dateFunction();
 }
-
-
 document.addEventListener('DOMContentLoaded', myFunction);

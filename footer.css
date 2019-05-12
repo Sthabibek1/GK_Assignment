@@ -1,70 +1,90 @@
 .headfooter1{
-  margin top: 50%;
-
+  margin top: 50%; /*to move the headfooter1 div botom*/
 }
 .headfooter{
-  display: flex;
-  flex-direction: row;
+  display: flex; /*it is used to give flex direction*/
+  flex-direction: row; /*the content will be in rows*/
   display: inline;
-  width: 60%;
+  width: 60%; /*giving width to head footer div*/
 }
 .logo2{
-  margin-left: 5%;
-  margin-top: 20%; 
+  margin-left: 5%;/*here the code is used to shift right */
+  margin-top: 20%; /*here the code is used to shift down*/
+
 }
 footer{
-  color: white;
-  background: rgba(0,0,0,0.5);
+  color: white;/* here the code is used to give color*/
+  background: rgba(0,0,0,0.5);/* to give color red green blue and opacity*/
   box-shadow: inset 0 -10px 20px 0 rgba(0,0,1,1);
 }
 .footer1{
-  margin-left: 5%;
-  font-size: 14px;
+  margin-left: 5%;/*here the code is used to shift right */
+  font-size: 14px;/* here the code is uded to resize font size*/
 }
 .footer2{
-  width: 30vw;
-  height: 20vh;
+  width: 30vw;/*here the code is used to give width*/
+  height: 20vh;/*here the code is used to give height*/
   margin-left: 65vw;
   margin-top: -10vw;
 }
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
-  text-align: center;
-  text-decoration: none;
+   text-align: center;/* to place text in center*/
+  text-decoration: none;/*here the code is used to remove underline*/
+  width: 30px;/*here the code is used to give width*/
   margin: 5px 2px;
-  border-radius: 50%;
+  border-radius: 50%;/*here the code is used to make circle*/
 }
-
-.fa:hover {
+.fa:hover {/* this code hover activates when the mouse is hovered or moved in the fa class*/
     opacity: 0.5;
 }
-
 .fa-facebook {
-  background: blue;
-  color: white;
+  background: blue;/*here the code is used to color the background */
+  color: white;  /*to give color to facebvook icon*/
 }
-
 .fa-twitter {
-  background:  navy;
-  color: white;
+  background:  navy;/*here the code is used to color the background */
+  color: white;/*to give color to twitter icon*/
 }
-
 .fa-youtube {
-  background:red;
-  color: white;
+  background:red;/*here the code is used to color the background */
+  color: white;/*to give color to youtube icon*/
+}
+.fa-instagram {
+  background: orange;/*here the code is used to color the background */
+  color: white;/*to give color to instagram icon*/
+}
+.footer3{
+  text-align: center; /* to place text in center*/
+}
+.footer3{
+  text-align: center;/* to place text in center*/
+  font-size: 16px;
 }
 
-.fa-instagram {
-  background: orange;
-  color: white;
+
+@media only screen and (max-width:1050px){
+ footer{
+  display: flex;
+  flex-direction: column;
+  }
+  .footer2{
+    width: 80vw;/*here the code is used to give width*/
+    display: flex;
+    flex-direction: row;
+    margin-left: 1vw;
+    margin-top: 0vw;
 }
-.footer3{
-  text-align: center;
+.footer1{
+  text-align: center;/* to place text in center*/
 }
-.footer3{
-  text-align: center;
-  font-weight: bolder;
-  font-size: 16px;
+.footer2{
+  width: 40vw;/*here the code is used to give width*/
+  height: 10vh;/*here the code is used to give height*/
+  margin-left: 20vw;
+}
+.footer1{
+margin-left: 180px;
+  font-size: 14px;/* here the code is uded to resize font size*/
 }

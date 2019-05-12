@@ -1,6 +1,6 @@
 .logo {
-	width:70%; 
-	height:20%;
+	width:70%; /*here the code is used to give width*/
+	height:20%;/*here the code is used to give height*/
 }
 
 
@@ -8,7 +8,7 @@
 overflow: hidden;
  box-shadow:inset 0 -10px 20px 0 rgba(0,0,1,1) ;
  font-size: 20px;
-opacity: 0.7;
+opacity: 0.7;/*here the code opacity is used to increase the opactiy of heading1 class*/
 }
 
 .heading1 li{

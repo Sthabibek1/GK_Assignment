@@ -1,22 +1,25 @@
 
 body{
-  animation: bganimation 10s infinite;
-  background-image: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #eb4d4b,#badc58);
-  background-size: 200%;
+  animation: bganimation 10s infinite;/**/
+
+  background-image: linear-gradient(125deg, #2BEC7A, #06EE6F, #1CCDB7, #56E5B3,#1CCDB7);
+  background-size: 200%;/* to give the background size*/
+
 }
 @keyframes bganimation{
   0%{
-    background-position: 0 49%;
+    background-position: 0 49%;/* from 0% to 50% background position there is one animation*/
   }
   50%{
-    background-position: 99% 49%;
+    background-position: 99% 49%;/*from 50% to 100% background position there is one animation */
   }
   100%{
     background-position: 1% 50%;
   }
 }
 *{
-  font-family: Calibri;
+  font-family: Calibri;/* to change the font family*/
+
   margin: 0;
   padding: 0;
   background-size: cover;
@@ -29,9 +32,11 @@ body{
 }
 .jobcomp{
   width: 90%;
-  column-count: 2;
-  column-gap: 25px;
-  column-width:40%;
+  /*column-count: 2;*/
+  column-gap: 25px;/* to make gap between the column*/
+
+  column-width:40%;/* to make the column width*/
+
 }
 .jobcomp a[title]{
   display: inline-block;
@@ -41,7 +46,8 @@ body{
   /*box-shadow: 0 1px 2px rgba(0,0,0.14) rgba(0,0,0.25);*/
   opacity: 0.6%;
   margin-bottom: 1px;
-  transition: all .2s cubic-bezier(0.24,.8,.27,1.1);
+  transition: all .105s cubic-bezier(0.22,.9,.25,1.05);/* to control animation time*/
+
 }
 .jobcomp a[title]:hover{
 }
@@ -51,7 +57,8 @@ main{
   column-width: 2530%;
   column-count: 2;
   column-gap: 25px;
-  -webkit-column-width: 230px;
+  -webkit-column-width: 230px;/* webkit makes the code run in chrome */
+
   -webkit-column-count: 3;
   -webkit-column-gap: 25px;
 }
@@ -70,16 +77,26 @@ main a[title]{
   text-decoration:none;
   padding:17px; 
   color:white;
-  box-shadow: 0 1px 2px rgba(0,0,0.14) rgba(0,0,0.25);
+  box-shadow: 0 1px 2px rgba(0,0,0.14) rgba(0,0,0.25);/* box shadow is used to give special raise effcect*/
   margin-bottom: 1px;
-  transition: all .2s cubic-bezier(0.24,.8,.27,1.1);
+  transition: all .2s cubic-bezier(0.24,.8,.27,1.1);/*transison effect is seen when we use hover*/
+}
+.review21{
+  color: white;
+}
+.review21 a:hover{
+  box-shadow: 0 1px 2px rgba(0,0,0.14) rgba(0,0,0.25);/* box shadow will work if mouse is hovered in the div */
+
+  transition: all .2s cubic-bezier(0.24,.8,.27,1.1);/*transion code will specify the speed curve in animation*/
+
 }
 a[title] figure img{
   width: 100%;
   height: auto;
   margin-top: 15px;
 }
-main:hover a[title]:not(:hover){
+main:hover a[title]:not(:hover){/* the condition when one div is hovered then the other divs becomes opacue or other divs fades  */
+
   opacity: 0.8;
 }
 a[title]:hover{
@@ -128,13 +145,13 @@ flex-direction: row;
  margin-left: 130px;
  margin-top: 10px;
 } 
- @keyframes slideshow{
+ @keyframes slideshow{/* by keyframes we can add in how uch time we need to display the image*/
    0%{
-   background-image: url(cnp.jpg);
+   background-image: url(cnp.jpg);/* in 10 sec of time from 0% to 30% background image of cnp is displayed*/
    background-size: 100% 100%;
    }
    35%{
-background-image: url(RARAL.jpg);
+background-image: url(RARAL.jpg);/* from 35% to 75%  backgroumd image rara is displayed */
 background-size: 100% 100%;
    }
    75%{
@@ -223,8 +240,6 @@ background-size: 100% 100%;
   margin-left: 100px;
   margin-top: 25px;
 }
-
-}
 .htmltutorial1 a:hover ,.csstutorial1 a:hover ,.javascripttutorial1 a:hover{
   box-shadow: 0 15px 30px rgba(0,0,0,.28), 0 12px 12px rgba(0,0,0,.23); 
 }
@@ -250,9 +265,7 @@ background-size: 100% 100%;
   margin: 18px 0;
   padding: 20px 40px;
   margin-left: 10px;
-
 }
-
 .jobformtext1{
  cursor: pointer;
   padding: 15px 45px;
@@ -278,18 +291,63 @@ background-size: 100% 100%;
   display: flex;
   flex-direction: row;
 }
-@media only screen and (max-width:1050px){
+.map111{
+  width: 180px;
+  height: 80px;
+  border:0
+}
+@media only screen and (max-width:1050px){/* media quries make the site responsive if the width is less than 1050 media quries make the webpage responsive*/
+
 .heading1 ul{
   display: flex;
   flex-direction: column;
 }
-.headfooter ul {
+.tutorial{
   display: flex;
   flex-direction: column;
 }
-.headfooter1{
+.htmltutorial ,.csstutorial ,.javascripttutorial{ 
+  height:auto;
+  margin-left:-4px;
+}
+.slideshow{
+  width: 80%;
+  height:250px;
+  background-image: url(cnp.jpg);
+  background-size: 100% 100%;
+ animation: slideshow 10s infinite linear;
+ margin-left: 60px;
+ margin-top: 10px;
+} 
+.ad111{
+  text-align:center;
+  font-size: 30px;
+  width: 80%;
+  height:200px;
+  margin-left: 50px;
+  margin-top: 5px;
+  background-image: url(nami1.jpg);
+  background-size: 100% 100%;
+ animation: jobad 10s infinite linear;
+ box-shadow: 1px, 2px, 11px, 6px grey;
+}
+.jobpage1{
   display: flex;
   flex-direction: column;
 }
-
+.map111{
+  margin-left:100px;
+  margin-top: 20px;
+  width: 250px;
+  height: 150px;
+}
+.jobform{
+  margin-left: 70px;
+}
+.advertisment{
+  margin-left: 45px;
+}
+.heading11111{
+  text-align: center;
+}
 }
